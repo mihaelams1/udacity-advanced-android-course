@@ -125,8 +125,9 @@ public class MainActivity extends AppCompatActivity {
                 for (String weatherString : weatherData) {
                     mWeatherTextView.append((weatherString) + "\n\n\n");
                 }
+            } else {
+                showErrorMessage();
             }
-            showErrorMessage();
         }
     }
 
